@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial" }}>
-      <h1>Notes App Demo main</h1>
+      <h1>Notes App</h1>
 
       {/* Add Note Section */}
       <div style={{ marginBottom: "20px" }}>
@@ -30,7 +30,7 @@ const App = () => {
           }}
         />
         <button onClick={handleAddNote} style={{ padding: "10px" }}>
-          Add Note from main branch
+          Add Note
         </button>
       </div>
 
