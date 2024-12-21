@@ -61,7 +61,7 @@ const App = () => {
                 cursor: "pointer",
               }}
             >
-              Delete
+              Delete button chages in test
             </button>
           </li>
         ))}
