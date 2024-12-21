@@ -61,7 +61,7 @@ const App = () => {
                 cursor: "pointer",
               }}
             >
-              Delete Note by jaimin
+              Delete
             </button>
           </li>
         ))}
