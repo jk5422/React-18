@@ -61,7 +61,7 @@ const App = () => {
                 cursor: "pointer",
               }}
             >
-              Delete
+              Delete Note
             </button>
           </li>
         ))}
