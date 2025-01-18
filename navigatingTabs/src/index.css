@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Sidebar styling */
+aside {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #ddd;
+}
+
+aside ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 15px;
+}
+
+aside a {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+aside a:hover {
+  color: #007bff;
+}
+
+aside a.active {
+  color: #007bff;
+}
+
+/* Header styling */
+header {
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Main container */
+main {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Content layout */
+div[style*="display: 'flex';"] {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  /* Matches sidebar width */
+}
+
+div[style*="flex: 1; display: 'flex';"] {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  /* Use Flexbox for centering */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  padding: 20px;
+  /* Keep some padding for breathing space */
+  flex: 1;
+  /* Ensure it grows to fill available space */
+  overflow-y: auto;
+  /* Handle overflow if content grows larger */
+  text-align: center;
+  /* Center-align text for better readability */
+}
