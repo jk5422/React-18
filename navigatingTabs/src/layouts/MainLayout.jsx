@@ -13,6 +13,8 @@ const MainLayout = () => {
 
     useEffect(() => {
         // Add the current route as a tab
+
+        // extract the first letter from pathname and capitalize it and add the rest of the pathname to it  and store it in pageName and then dispatch the addTab action with the path and pageName
         const pageName = location.pathname === '/' ? 'Home' : location.pathname.slice(1).charAt(0).toUpperCase() + location.pathname.slice(2);
         dispatch(addTab({ path: location.pathname, name: pageName }));
     }, [location, dispatch]);
