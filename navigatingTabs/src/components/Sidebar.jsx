@@ -8,6 +8,7 @@ const Sidebar = () => {
                     <li><NavLink to="/" style={({ isActive }) => ({ textDecoration: 'none', color: isActive ? 'blue' : 'black' })}>Home</NavLink></li>
                     <li><NavLink to="/about" style={({ isActive }) => ({ textDecoration: 'none', color: isActive ? 'blue' : 'black' })}>About</NavLink></li>
                     <li><NavLink to="/contact" style={({ isActive }) => ({ textDecoration: 'none', color: isActive ? 'blue' : 'black' })}>Contact</NavLink></li>
+                    <li><NavLink to="/hocs" style={({ isActive }) => ({ textDecoration: 'none', color: isActive ? 'blue' : 'black' })}>Hocs</NavLink></li>
                 </ul>
             </nav>
         </aside>
